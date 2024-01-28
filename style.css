@@ -1,0 +1,66 @@
+body {
+    background: linear-gradient(to right, #4c80f1, #9347b5);
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+#timer-container {
+    text-align: center;
+    color: white;
+    border: 2px solid rgba(218, 217, 217, 0.61);
+    border-radius: 5px;
+    padding: 40px;
+    background: rgba(179, 179, 179, 0.473);
+    box-shadow: 2px 3px 7px 2px lightblue;
+}
+
+/* #buttons button {
+    margin: 0 5px;
+} */
+
+#timer, #buttons {
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: rgb(109, 121, 113);
+}
+
+#buttons button {
+    margin: 0 10px;
+    padding: 5px 10px;
+    font-size: 1em;
+    background: transparent;
+    color: black; /* Button text color matches the primary color in the gradient */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#buttons button:hover{
+     /* border:  solid rgb(170, 173, 182); */
+     color: #d1cbcb;
+     background-color: rgba(194, 194, 194, 0.349);
+}
+
+#settings-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+#settings-container button {
+    margin: 0 5px;
+    font-size: 1em;
+    background: #fff;
+    color: #2ecc71; /* Button text color matches the secondary color in the gradient */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#time {
+    font-size: 1.5em;
+    margin: 0 10px;
+}
