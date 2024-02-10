@@ -31,14 +31,13 @@ body {
     padding: 5px 10px;
     font-size: 1em;
     background: transparent;
-    color: black; /* Button text color matches the primary color in the gradient */
+    color: black; 
     border: none;
-    border-radius: 5px;
+    border-radius: 18px;
     cursor: pointer;
 }
 
 #buttons button:hover{
-     /* border:  solid rgb(170, 173, 182); */
      color: #d1cbcb;
      background-color: rgba(194, 194, 194, 0.349);
 }
@@ -54,7 +53,7 @@ body {
     margin: 0 5px;
     font-size: 1em;
     background: #fff;
-    color: #2ecc71; /* Button text color matches the secondary color in the gradient */
+    color: #2ecc71; 
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -63,4 +62,17 @@ body {
 #time {
     font-size: 1.5em;
     margin: 0 10px;
+}
+
+#modal-decrease{
+    background: transparent;
+    border: none;
+    font-size: 30px;
+}
+
+
+#modal-increase{
+    background: transparent;
+    border: none;
+    font-size: 20px;
 }

@@ -2,8 +2,8 @@ let timer;
 let modalTimer;
 let minutes = 25;
 let seconds = 0;
-let modalMinutes = 25;
-let modalSeconds = 0;
+// let modalMinutes = 25;
+// let modalSeconds = 0;
 let isTimerRunning = false;
 let isModalTimerRunning = false;
 
@@ -44,7 +44,6 @@ function updateTimer() {
 }
 
 function openSettingsModal() {
-    // Update modal timer before showing the modal
     updateModalTime();
     $('#settingsModal').modal('show');
 }
@@ -95,9 +94,7 @@ function displayModalTime() {
 }
 
 function handleDone() {
-    // Add your timer functionality here
     console.log("Timer added!");
-    // You can add more code to manipulate the timer or perform other actions.
     $('#settingsModal').modal('hide');
   }
 
@@ -112,4 +109,13 @@ function displayTime() {
 
 function padZero(value) {
     return value < 10 ? `0${value}` : value;
+}
+
+function handleDone() {
+    minutes = modalMinutes;
+    seconds = modalSeconds;
+    displayTime();
+
+    console.log("Timer updated!");
+    $('#settingsModal').modal('hide');
 }
